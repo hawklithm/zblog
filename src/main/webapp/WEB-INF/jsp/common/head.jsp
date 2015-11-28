@@ -1,15 +1,14 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-//    String domain = request.getHeader("Host");
-//    String prefix = request.getScheme()+"://"+request.getServerName();
+    String prefix = request.getScheme()+"://"+request.getServerName();
 //    if (request.getServerPort()!=80){
 //        prefix+=":"+request.getServerPort();
 //    }
-//    if (request.getContextPath()!=null&&request.getContextPath().length()!=0){
-//        prefix+="/"+request.getContextPath()+"/";
-//    }
-//    System.out.println(prefix);
-//    request.setAttribute("domain", prefix);
+    if (request.getContextPath()!=null&&request.getContextPath().length()!=0){
+        prefix+="/"+request.getContextPath()+"/";
+    }
+    System.out.println(prefix);
+    request.setAttribute("domain", prefix);
 
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,7 +18,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <title>${ptitle}${ptitle!=null?' | ':''}${g.title}</title>
 <link rel="icon" href="${g.domain}/resource/img/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="${g.domain}/resource/css/style.css">
+<link rel="stylesheet" href="${domain}/resource/css/style.css">
 <link rel="stylesheet" media="screen and (max-width:770px)" href="${g.domain}/resource/css/responsive.css">
 <script type="text/javascript" src="${g.domain}/resource/js/jquery-1.9.1.min.js"></script>
 <!--[if IE 6]>
