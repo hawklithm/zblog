@@ -99,7 +99,7 @@ CREATE TABLE `options` (
 --  Records of `options`
 -- ----------------------------
 BEGIN;
-INSERT INTO `options` VALUES ('allowComment', 'allowComment', 'true'), ('description', 'description', 'Spring Mybatis Ehcache Shiro Lucene FreeMarker'), ('keywords', 'keywords', 'test'), ('maxshow', 'maxshow', '10'), ('postid', 'postid', '12'), ('subtitle', 'subtitle', 'from zblog'), ('title', 'title', 'blueHawky');
+INSERT INTO `options` VALUES ('post_allowComment', 'post_allowComment', 'true'), ('description', 'description', 'Spring Mybatis Ehcache Shiro Lucene FreeMarker'), ('keywords', 'keywords', 'test'), ('maxshow', 'maxshow', '10'), ('postid', 'postid', '12'), ('subtitle', 'subtitle', 'from zblog'), ('title', 'title', 'blueHawky');
 COMMIT;
 
 -- ----------------------------
