@@ -10930,3 +10930,306 @@ DEBUG 2015/11/28 20:00:00 DEBUG addRcount:139 - ==> Parameters: 1(Integer), 23(S
 DEBUG 2015/11/28 20:00:00 DEBUG addRcount:139 - <==    Updates: 1
 DEBUG 2015/11/28 20:00:00 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.addRcount - sql:update post set rcount=rcount+1 where id='23'
 DEBUG 2015/11/28 20:00:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1b1cb150 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6bb4fb88)
+DEBUG 2015/11/28 20:17:41 DEBUG LogFactory:128 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO 2015/11/28 20:17:41  INFO MLog:80 - MLog clients using log4j logging.
+INFO 2015/11/28 20:17:41  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+DEBUG 2015/11/28 20:17:41 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge1399dlne6t5id8m72|30d72c00] registered.
+DEBUG 2015/11/28 20:17:42 DEBUG LoginFilter:177 - Initializing filter 'LoginFilter'
+DEBUG 2015/11/28 20:17:42 DEBUG LoginFilter:202 - Filter 'LoginFilter' configured successfully
+DEBUG 2015/11/28 20:17:42 DEBUG XssFilter:177 - Initializing filter 'XssFilter'
+DEBUG 2015/11/28 20:17:42 DEBUG XssFilter:202 - Filter 'XssFilter' configured successfully
+DEBUG 2015/11/28 20:17:42 DEBUG StatelessCsrfFilter:177 - Initializing filter 'StatelessCsrfFilter'
+DEBUG 2015/11/28 20:17:42 DEBUG StatelessCsrfFilter:202 - Filter 'StatelessCsrfFilter' configured successfully
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:404 - incremented pending_acquires: 2
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:404 - incremented pending_acquires: 3
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:289 - com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 18000000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+INFO 2015/11/28 20:18:01  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1399dlne6t5id8m72|30d72c00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1399dlne6t5id8m72|30d72c00, idleConnectionTestPeriod -> 18000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/myblog?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:538 - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1291 - awaitAvailable(): [unknown]
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 0, unused: 0, excluded: 0]
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:538 - acquire test -- pool size: 0; target_pool_size: 3; desired target? 2
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1291 - awaitAvailable(): [unknown]
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 0, unused: 0, excluded: 0]
+DEBUG 2015/11/28 20:18:01 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@18958aba.acquireResource() returning. 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 1, unused: 1, excluded: 0]
+DEBUG 2015/11/28 20:18:01 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@18958aba.acquireResource() returning. 
+DEBUG 2015/11/28 20:18:01 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@18958aba.acquireResource() returning. 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:422 - decremented pending_acquires: 2
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:422 - decremented pending_acquires: 1
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: uHHi9gvg81UXn4PLlLE(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: uHHi9gvg81UXn4PLlLE(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->179 ms - id:com.zblog.core.dal.mapper.UserMapper.loadById - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = 'uHHi9gvg81UXn4PLlLE'
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->634 ms - id:com.zblog.core.dal.mapper.UserMapper.loadById - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = 'uHHi9gvg81UXn4PLlLE'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/28 20:18:01 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,10 
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,10 
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - <==      Total: 10
+DEBUG 2015/11/28 20:18:01 DEBUG list:139 - <==      Total: 10
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->18 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->17 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@751fe77a: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@5b8de13b: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: 23(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: 23(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->15 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '23'
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->19 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '23'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@3d799150: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select id, name, visible from category where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: d3Lbk9G0GR3nO938cY0(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select id, name, visible from category where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: d3Lbk9G0GR3nO938cY0(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.CategoryMapper.loadById - sql:select id, name, visible from category where id = 'd3Lbk9G0GR3nO938cY0'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->12 ms - id:com.zblog.core.dal.mapper.CategoryMapper.loadById - sql:select id, name, visible from category where id = 'd3Lbk9G0GR3nO938cY0'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==> Parameters: 23(String)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==> Parameters: 23(String)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->12 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='23'
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->15 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='23'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@652a9410: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: 22(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: 22(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '22'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->15 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '22'
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==> Parameters: 22(String)
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@442937db: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='22'
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2f742769: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - ==> Parameters: 22(String)
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - ==> Parameters: 21(String)
+DEBUG 2015/11/28 20:18:01 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:01 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->16 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '21'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2348a5a8: close() called more than once.
+DEBUG 2015/11/28 20:18:01 DEBUG PerformanceInterceptor:57 - use time->21 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='22'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@337f54c5: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 21(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 21(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->16 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='21'
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 0
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->11 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='21'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 20(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 20(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->13 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '20'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 20(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->18 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '20'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1dce891e: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='20'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 20(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 19(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->12 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='20'
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '19'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 19(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='19'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 18(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->19 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '18'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2161f4b9: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 18(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 19(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='18'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->52 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='19'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@42913327: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 17(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '17'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 17(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='17'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 16(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->10 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '16'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 16(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='16'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 15(String)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '15'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 15(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='15'
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 17(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@24e5aac1: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '17'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 14(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '14'
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - ==> Parameters: 14(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@65d19c88: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->12 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '14'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 14(String)
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='14'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/28 20:18:02 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@5bd1d7ed: close() called more than once.
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - ==> Parameters: 14(String)
+DEBUG 2015/11/28 20:18:02 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:02 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='14'
+DEBUG 2015/11/28 20:18:02 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==> Parameters: description(String)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/28 20:18:04 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'description'
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==> Parameters: description(String)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@45819fe2: close() called more than once.
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG PerformanceInterceptor:57 - use time->11 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'description'
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==> Parameters: keywords(String)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:04 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'keywords'
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==> Parameters: keywords(String)
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - ==> Parameters: title(String)
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:04 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'title'
+DEBUG 2015/11/28 20:18:04 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
+DEBUG 2015/11/28 20:18:04 DEBUG PerformanceInterceptor:57 - use time->11 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'keywords'
+DEBUG 2015/11/28 20:18:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1d13b053 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f45bc0b)
