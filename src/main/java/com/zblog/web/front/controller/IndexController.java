@@ -77,6 +77,7 @@ public class IndexController{
   public void restatic(HttpServletRequest request){
     staticTemplate.staticHeader();
     staticTemplate.staticLinks();
+    staticTemplate.staticRecentOrHeader(true);
   }
 
 }

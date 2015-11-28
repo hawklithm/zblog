@@ -129,7 +129,7 @@ public class StaticTemplate{
    * 
    * @param ispost
    */
-  private void staticRecentOrHeader(boolean ispost){
+  public void staticRecentOrHeader(boolean ispost){
     if(ispost){
       MapContainer param = new MapContainer("domain", WebConstants.getDomain());
       param.put("posts", postManager.listRecent(10, PostConstants.POST_CREATOR_ALL));
