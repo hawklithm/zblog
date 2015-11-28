@@ -1,0 +1,561 @@
+DEBUG 2015/11/16 00:00:00 DEBUG VisitStatManager:32 - flush visit stat to database
+DEBUG 2015/11/16 00:00:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1670fbf1 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6e1ae72b)
+DEBUG 2015/11/16 00:00:00 DEBUG addRcount:139 - ==>  Preparing: update post set rcount=rcount+? where id=? 
+DEBUG 2015/11/16 00:00:00 DEBUG addRcount:139 - ==> Parameters: 1(Integer), 12(String)
+DEBUG 2015/11/16 00:00:00 DEBUG addRcount:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:00:00 DEBUG PerformanceInterceptor:57 - use time->45 ms - id:com.zblog.core.dal.mapper.PostMapper.addRcount - sql:update post set rcount=rcount+1 where id='12'
+DEBUG 2015/11/16 00:00:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1670fbf1 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6e1ae72b)
+DEBUG 2015/11/16 00:00:57 DEBUG LogFactory:128 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO 2015/11/16 00:00:57  INFO MLog:80 - MLog clients using log4j logging.
+INFO 2015/11/16 00:00:57  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+DEBUG 2015/11/16 00:00:57 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge13a9d3an88nivav1j|54af73bd] registered.
+DEBUG 2015/11/16 00:00:58 DEBUG LoginFilter:177 - Initializing filter 'LoginFilter'
+DEBUG 2015/11/16 00:00:58 DEBUG LoginFilter:202 - Filter 'LoginFilter' configured successfully
+DEBUG 2015/11/16 00:00:58 DEBUG XssFilter:177 - Initializing filter 'XssFilter'
+DEBUG 2015/11/16 00:00:58 DEBUG XssFilter:202 - Filter 'XssFilter' configured successfully
+DEBUG 2015/11/16 00:00:58 DEBUG StatelessCsrfFilter:177 - Initializing filter 'StatelessCsrfFilter'
+DEBUG 2015/11/16 00:00:58 DEBUG StatelessCsrfFilter:202 - Filter 'StatelessCsrfFilter' configured successfully
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:404 - incremented pending_acquires: 2
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:404 - incremented pending_acquires: 3
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:289 - com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 18000000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+INFO 2015/11/16 00:01:41  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge13a9d3an88nivav1j|54af73bd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge13a9d3an88nivav1j|54af73bd, idleConnectionTestPeriod -> 18000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.24.162.77:3306/zblog?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:538 - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:1291 - awaitAvailable(): [unknown]
+DEBUG 2015/11/16 00:01:41 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 0, unused: 0, excluded: 0]
+DEBUG 2015/11/16 00:01:42 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c0f929a.acquireResource() returning. 
+DEBUG 2015/11/16 00:01:42 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c0f929a.acquireResource() returning. 
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 1, unused: 1, excluded: 0]
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:422 - decremented pending_acquires: 2
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:422 - decremented pending_acquires: 1
+DEBUG 2015/11/16 00:01:42 DEBUG loadById:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2015/11/16 00:01:42 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c0f929a.acquireResource() returning. 
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+DEBUG 2015/11/16 00:01:42 DEBUG loadById:139 - ==> Parameters: uHHi9gvg81UXn4PLlLE(String)
+DEBUG 2015/11/16 00:01:42 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:42 DEBUG PerformanceInterceptor:57 - use time->1059 ms - id:com.zblog.core.dal.mapper.UserMapper.loadById - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = 'uHHi9gvg81UXn4PLlLE'
+DEBUG 2015/11/16 00:01:42 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:42 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@15b830a4: close() called more than once.
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->49 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@9fe1c1e: close() called more than once.
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - ==>  Preparing: select id, name, visible from category where id = ? 
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - ==> Parameters: d3Lbk9G0GR3nO938cY0(String)
+DEBUG 2015/11/16 00:01:43 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->46 ms - id:com.zblog.core.dal.mapper.CategoryMapper.loadById - sql:select id, name, visible from category where id = 'd3Lbk9G0GR3nO938cY0'
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@4790cbc3: close() called more than once.
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/16 00:01:43 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:01:43 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->46 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@78368597: close() called more than once.
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG listByPost:139 - ==>  Preparing: select id, content, creator, url, status, parent, createTime from comment c where postid=? and (status='approve' ) order by c.createTime desc 
+DEBUG 2015/11/16 00:01:43 DEBUG listByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:01:43 DEBUG listByPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->38 ms - id:com.zblog.core.dal.mapper.CommentMapper.listByPost - sql:select id, content, creator, url, status, parent, createTime from comment c where postid='12' and (status='approve' ) order by c.createTime desc
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG getNextPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime > (select createTime from post where id=?) limit 1 
+DEBUG 2015/11/16 00:01:43 DEBUG getNextPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:01:43 DEBUG getNextPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->42 ms - id:com.zblog.core.dal.mapper.PostMapper.getNextPost - sql:select id,title from post where type='post' and createTime > (select createTime from post where id='12') limit 1
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1832c9a0: close() called more than once.
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG getPrevPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime < (select createTime from post where id=?) order by createTime desc limit 1 
+DEBUG 2015/11/16 00:01:43 DEBUG getPrevPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:01:43 DEBUG getPrevPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:01:43 DEBUG PerformanceInterceptor:57 - use time->41 ms - id:com.zblog.core.dal.mapper.PostMapper.getPrevPost - sql:select id,title from post where type='post' and createTime < (select createTime from post where id='12') order by createTime desc limit 1
+DEBUG 2015/11/16 00:01:43 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:43 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@518b0d75: close() called more than once.
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==> Parameters: description(String)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:44 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'description'
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2e151c94: close() called more than once.
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==> Parameters: keywords(String)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:44 DEBUG PerformanceInterceptor:57 - use time->37 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'keywords'
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@4862b488: close() called more than once.
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - ==> Parameters: title(String)
+DEBUG 2015/11/16 00:01:44 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:44 DEBUG PerformanceInterceptor:57 - use time->40 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'title'
+DEBUG 2015/11/16 00:01:44 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:44 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1983722e: close() called more than once.
+DEBUG 2015/11/16 00:01:45 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:45 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/16 00:01:45 DEBUG getOptionValue:139 - ==> Parameters: post_allowComment(String)
+DEBUG 2015/11/16 00:01:45 DEBUG getOptionValue:139 - <==      Total: 0
+DEBUG 2015/11/16 00:01:45 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'post_allowComment'
+DEBUG 2015/11/16 00:01:45 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:45 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1647c70c: close() called more than once.
+DEBUG 2015/11/16 00:01:59 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:59 DEBUG loadByNameAndPass:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = ? and password=md5(?) 
+DEBUG 2015/11/16 00:01:59 DEBUG loadByNameAndPass:139 - ==> Parameters: admin(String), Woshipm1(String)
+DEBUG 2015/11/16 00:01:59 DEBUG loadByNameAndPass:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:59 DEBUG PerformanceInterceptor:57 - use time->40 ms - id:com.zblog.core.dal.mapper.UserMapper.loadByNameAndPass - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = 'admin' and password=md5('Woshipm1')
+DEBUG 2015/11/16 00:01:59 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:59 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2e67f0fc: close() called more than once.
+DEBUG 2015/11/16 00:01:59 DEBUG LoginFilter:77 - logon-->/backend/index
+DEBUG 2015/11/16 00:01:59 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:59 DEBUG count:139 - ==>  Preparing: select count(*) from user 
+DEBUG 2015/11/16 00:01:59 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:01:59 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:01:59 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.UserMapper.count - sql:select count(*) from user
+DEBUG 2015/11/16 00:01:59 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:59 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@330b7263: close() called more than once.
+DEBUG 2015/11/16 00:01:59 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:01:59 DEBUG count:139 - ==>  Preparing: select count(*) from post 
+DEBUG 2015/11/16 00:01:59 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:00 DEBUG PerformanceInterceptor:57 - use time->39 ms - id:com.zblog.core.dal.mapper.PostMapper.count - sql:select count(*) from post
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@219fe50: close() called more than once.
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - ==>  Preparing: select count(*) from comment 
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:00 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.CommentMapper.count - sql:select count(*) from comment
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@6fbd9959: close() called more than once.
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - ==>  Preparing: select count(*) from upload 
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:00 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:00 DEBUG PerformanceInterceptor:57 - use time->42 ms - id:com.zblog.core.dal.mapper.UploadMapper.count - sql:select count(*) from upload
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@4fa7d56a: close() called more than once.
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:00 DEBUG PerformanceInterceptor:57 - use time->40 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - ==>  Preparing: select * from comment c order by c.createTime desc limit 10 
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:00 DEBUG listRecent:139 - <==      Total: 0
+DEBUG 2015/11/16 00:02:00 DEBUG PerformanceInterceptor:57 - use time->40 ms - id:com.zblog.core.dal.mapper.CommentMapper.listRecent - sql:select * from comment c order by c.createTime desc limit 10
+DEBUG 2015/11/16 00:02:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:00 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1ec123b4: close() called more than once.
+DEBUG 2015/11/16 00:02:07 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/16 00:02:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/16 00:02:07 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:07 DEBUG PerformanceInterceptor:57 - use time->74 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/16 00:02:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@7a3be5f9: close() called more than once.
+DEBUG 2015/11/16 00:02:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:07 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:02:07 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:02:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@241173ad: close() called more than once.
+DEBUG 2015/11/16 00:02:13 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/16 00:02:13 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:13 DEBUG setNullPostid:139 - ==>  Preparing: update upload set postid=null where postid=? 
+DEBUG 2015/11/16 00:02:13 DEBUG setNullPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:13 DEBUG setNullPostid:139 - <==    Updates: 0
+DEBUG 2015/11/16 00:02:13 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.UploadMapper.setNullPostid - sql:update upload set postid=null where postid='12'
+DEBUG 2015/11/16 00:02:13 DEBUG update:139 - ==>  Preparing: update post set title=?,excerpt=?, content=?,parent=?, pstatus=?, categoryid=?, cstatus=?, lastUpdate=? where id=? 
+DEBUG 2015/11/16 00:02:13 DEBUG update:139 - ==> Parameters: 第一篇文章(String), (String), java.io.StringReader@45a91c97(StringReader), Root(String), publish(String), d3Lbk9G0GR3nO938cY0(String), open(String), 2015-11-16 00:02:13.573(Timestamp), 12(String)
+DEBUG 2015/11/16 00:02:13 DEBUG update:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:13 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.PostMapper.update - sql:update post set title='第一篇文章',excerpt='', content='<div id="epiceditor-preview">
+ <div id="epiceditor-preview"></div>
+</div>',parent='Root', pstatus='publish', categoryid='d3Lbk9G0GR3nO938cY0', cstatus='open', lastUpdate='2015-11-16 00:02:13' where id='12'
+DEBUG 2015/11/16 00:02:13 DEBUG deleteByPostid:139 - ==>  Preparing: delete from tag where postid=? 
+DEBUG 2015/11/16 00:02:13 DEBUG deleteByPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:13 DEBUG deleteByPostid:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:13 DEBUG PerformanceInterceptor:57 - use time->40 ms - id:com.zblog.core.dal.mapper.TagMapper.deleteByPostid - sql:delete from tag where postid='12'
+DEBUG 2015/11/16 00:02:13 DEBUG insertBatch:139 - ==>  Preparing: insert into tag(id,name,postid,createTime) values (?, ?, ?, ?) 
+DEBUG 2015/11/16 00:02:13 DEBUG insertBatch:139 - ==> Parameters: vxfAiLbLj6M8nWz5aGg(String), 随笔(String), 12(String), 2015-11-16 00:02:13.573(Timestamp)
+DEBUG 2015/11/16 00:02:13 DEBUG insertBatch:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:13 DEBUG PerformanceInterceptor:57 - use time->47 ms - id:com.zblog.core.dal.mapper.TagMapper.insertBatch - sql:insert into tag(id,name,postid,createTime) values ('vxfAiLbLj6M8nWz5aGg', '随笔', '12', '2015-11-16 00:02:13')
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/16 00:02:14 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/16 00:02:14 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:14 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1df168b9: close() called more than once.
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/16 00:02:14 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:14 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:14 DEBUG PerformanceInterceptor:57 - use time->37 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@3a6e821b: close() called more than once.
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/16 00:02:14 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:14 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:14 DEBUG PerformanceInterceptor:57 - use time->37 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@30adf51c: close() called more than once.
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Couldn't find template in cache for "recent.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent.html"): Found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Loading template for "recent.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/recent.html"
+INFO 2015/11/16 00:02:14  INFO StaticTemplate:138 - staticRecent
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG list:139 - ==>  Preparing: select name, count(*) as count from tag group by name order by createTime desc 
+DEBUG 2015/11/16 00:02:14 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:14 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:14 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.TagMapper.list - sql:select name, count(*) as count from tag group by name order by createTime desc
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@4fd647a7: close() called more than once.
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Couldn't find template in cache for "tagcloud.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud.html"): Found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Loading template for "tagcloud.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/tagcloud.html"
+INFO 2015/11/16 00:02:14  INFO StaticTemplate:85 - staticCloudTags
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG listArchive:139 - ==>  Preparing: select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc 
+DEBUG 2015/11/16 00:02:14 DEBUG listArchive:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:14 DEBUG listArchive:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:14 DEBUG PerformanceInterceptor:57 - use time->37 ms - id:com.zblog.core.dal.mapper.PostMapper.listArchive - sql:select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Couldn't find template in cache for "archive.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh.html"): Not found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive.html"): Found
+DEBUG 2015/11/16 00:02:14 DEBUG cache:45 - Loading template for "archive.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/archive.html"
+INFO 2015/11/16 00:02:14  INFO StaticTemplate:99 - staticArchive
+DEBUG 2015/11/16 00:02:14 DEBUG LoginFilter:77 - logon-->/backend/posts/
+DEBUG 2015/11/16 00:02:14 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:14 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/16 00:02:14 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/16 00:02:14 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:15 DEBUG PerformanceInterceptor:57 - use time->102 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/16 00:02:15 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:15 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2f257638: close() called more than once.
+DEBUG 2015/11/16 00:02:15 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:15 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:02:15 DEBUG PerformanceInterceptor:57 - use time->33 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:02:15 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:15 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@60f000fa: close() called more than once.
+DEBUG 2015/11/16 00:02:28 DEBUG LoginFilter:77 - logon-->/backend/posts/edit
+DEBUG 2015/11/16 00:02:28 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:28 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:02:28 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:28 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:02:28 DEBUG PerformanceInterceptor:57 - use time->38 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:02:28 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:28 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@6835ec0f: close() called more than once.
+DEBUG 2015/11/16 00:02:29 DEBUG LoginFilter:77 - logon-->/backend/uploads/ueditor
+DEBUG 2015/11/16 00:02:57 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG setNullPostid:139 - ==>  Preparing: update upload set postid=null where postid=? 
+DEBUG 2015/11/16 00:02:57 DEBUG setNullPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:57 DEBUG setNullPostid:139 - <==    Updates: 0
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.UploadMapper.setNullPostid - sql:update upload set postid=null where postid='12'
+DEBUG 2015/11/16 00:02:57 DEBUG update:139 - ==>  Preparing: update post set title=?,excerpt=?, content=?,parent=?, pstatus=?, categoryid=?, cstatus=?, lastUpdate=? where id=? 
+DEBUG 2015/11/16 00:02:57 DEBUG update:139 - ==> Parameters: 第一篇文章(String), #这里是标题标题这个文章更多是为了测试markdown写的，在github上发现了https://github.com/dongfangshangren/Zblog这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就是l(String), java.io.StringReader@3f705284(StringReader), Root(String), publish(String), d3Lbk9G0GR3nO938cY0(String), open(String), 2015-11-16 00:02:57.58(Timestamp), 12(String)
+DEBUG 2015/11/16 00:02:57 DEBUG update:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.PostMapper.update - sql:update post set title='第一篇文章',excerpt='#这里是标题标题这个文章更多是为了测试markdown写的，在github上发现了https://github.com/dongfangshangren/Zblog这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就是l', content='<div style="font-family: STHeiti; font-size: medium; white-space: normal;">
+ #这里是标题标题
+</div>
+<span style="font-family: STHeiti; font-size: medium;">这个文章更多是为了测试markdown写的，在github上发现了https://github.com/dongfangshangren/Zblog这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。</span>
+<div style="font-family: STHeiti; font-size: medium; white-space: normal;">
+ <br>
+ <div>
+  然后另外一个问题呢，就是lucence的版本问题升级到5.2.1了
+ </div>
+</div>
+<div style="font-family: STHeiti; font-size: medium; white-space: normal;">
+ 刚发现搜索那一块还有问题，各种不兼容，看样子只有重写了，顺带学一下lucence
+</div>
+<p></p>
+<p><br></p>
+<p>先把搜索那块屏蔽掉了，结果尼玛发现markdown有问题</p>',parent='Root', pstatus='publish', categoryid='d3Lbk9G0GR3nO938cY0', cstatus='open', lastUpdate='2015-11-16 00:02:57' where id='12'
+DEBUG 2015/11/16 00:02:57 DEBUG deleteByPostid:139 - ==>  Preparing: delete from tag where postid=? 
+DEBUG 2015/11/16 00:02:57 DEBUG deleteByPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:57 DEBUG deleteByPostid:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->33 ms - id:com.zblog.core.dal.mapper.TagMapper.deleteByPostid - sql:delete from tag where postid='12'
+DEBUG 2015/11/16 00:02:57 DEBUG insertBatch:139 - ==>  Preparing: insert into tag(id,name,postid,createTime) values (?, ?, ?, ?) 
+DEBUG 2015/11/16 00:02:57 DEBUG insertBatch:139 - ==> Parameters: BbRJ7cLeUvulfuYiVqG(String), 随笔(String), 12(String), 2015-11-16 00:02:57.58(Timestamp)
+DEBUG 2015/11/16 00:02:57 DEBUG insertBatch:139 - <==    Updates: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->44 ms - id:com.zblog.core.dal.mapper.TagMapper.insertBatch - sql:insert into tag(id,name,postid,createTime) values ('BbRJ7cLeUvulfuYiVqG', '随笔', '12', '2015-11-16 00:02:57')
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/16 00:02:57 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/16 00:02:57 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@7c6936f3: close() called more than once.
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/16 00:02:57 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:57 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->39 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@7f15cf03: close() called more than once.
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/16 00:02:57 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:02:57 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:57 DEBUG PerformanceInterceptor:57 - use time->33 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG cache:45 - Couldn't find template in cache for "recent.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:57 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:57 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh.html"): Not found
+DEBUG 2015/11/16 00:02:57 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent.html"): Found
+DEBUG 2015/11/16 00:02:57 DEBUG cache:45 - Loading template for "recent.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/recent.html"
+INFO 2015/11/16 00:02:57  INFO StaticTemplate:138 - staticRecent
+DEBUG 2015/11/16 00:02:57 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:57 DEBUG list:139 - ==>  Preparing: select name, count(*) as count from tag group by name order by createTime desc 
+DEBUG 2015/11/16 00:02:57 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:58 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.TagMapper.list - sql:select name, count(*) as count from tag group by name order by createTime desc
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@3427242a: close() called more than once.
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - Couldn't find template in cache for "tagcloud.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh.html"): Not found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud.html"): Found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - Loading template for "tagcloud.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/tagcloud.html"
+INFO 2015/11/16 00:02:58  INFO StaticTemplate:85 - staticCloudTags
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG listArchive:139 - ==>  Preparing: select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc 
+DEBUG 2015/11/16 00:02:58 DEBUG listArchive:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:58 DEBUG listArchive:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:58 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.PostMapper.listArchive - sql:select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@5fd2cda7: close() called more than once.
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - Couldn't find template in cache for "archive.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh_CN.html"): Not found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh.html"): Not found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive.html"): Found
+DEBUG 2015/11/16 00:02:58 DEBUG cache:45 - Loading template for "archive.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/archive.html"
+INFO 2015/11/16 00:02:58  INFO StaticTemplate:99 - staticArchive
+DEBUG 2015/11/16 00:02:58 DEBUG LoginFilter:77 - logon-->/backend/posts/
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/16 00:02:58 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:02:58 DEBUG PerformanceInterceptor:57 - use time->76 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@60546e2a: close() called more than once.
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:02:58 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:02:58 DEBUG PerformanceInterceptor:57 - use time->39 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:02:58 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:00 DEBUG LoginFilter:77 - logon-->/backend/posts/edit
+DEBUG 2015/11/16 00:03:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:00 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:03:00 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:00 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:03:00 DEBUG PerformanceInterceptor:57 - use time->38 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:03:00 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:00 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1fbfa347: close() called more than once.
+DEBUG 2015/11/16 00:03:00 DEBUG LoginFilter:77 - logon-->/backend/uploads/ueditor
+DEBUG 2015/11/16 00:03:07 DEBUG LoginFilter:77 - logon-->/backend/index
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==>  Preparing: select count(*) from user 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.UserMapper.count - sql:select count(*) from user
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@383babdc: close() called more than once.
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==>  Preparing: select count(*) from post 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->37 ms - id:com.zblog.core.dal.mapper.PostMapper.count - sql:select count(*) from post
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==>  Preparing: select count(*) from comment 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.CommentMapper.count - sql:select count(*) from comment
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@342888f8: close() called more than once.
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==>  Preparing: select count(*) from upload 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:07 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->33 ms - id:com.zblog.core.dal.mapper.UploadMapper.count - sql:select count(*) from upload
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@2c1f31bb: close() called more than once.
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->34 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@30f398c: close() called more than once.
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - ==>  Preparing: select * from comment c order by c.createTime desc limit 10 
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:07 DEBUG listRecent:139 - <==      Total: 0
+DEBUG 2015/11/16 00:03:07 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.CommentMapper.listRecent - sql:select * from comment c order by c.createTime desc limit 10
+DEBUG 2015/11/16 00:03:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:07 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@602d00e2: close() called more than once.
+DEBUG 2015/11/16 00:03:10 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/16 00:03:10 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/16 00:03:10 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/16 00:03:10 DEBUG PerformanceInterceptor:57 - use time->69 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/16 00:03:10 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:10 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@74826fe8: close() called more than once.
+DEBUG 2015/11/16 00:03:10 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/16 00:03:10 DEBUG list:139 - <==      Total: 4
+DEBUG 2015/11/16 00:03:10 DEBUG PerformanceInterceptor:57 - use time->36 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/16 00:03:10 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:10 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@41f9a1c0: close() called more than once.
+DEBUG 2015/11/16 00:03:12 DEBUG LoginFilter:77 - logon-->/posts/12
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG listByPost:139 - ==>  Preparing: select id, content, creator, url, status, parent, createTime from comment c where postid=? and (status='approve' ) order by c.createTime desc 
+DEBUG 2015/11/16 00:03:12 DEBUG listByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:03:12 DEBUG listByPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:03:12 DEBUG PerformanceInterceptor:57 - use time->39 ms - id:com.zblog.core.dal.mapper.CommentMapper.listByPost - sql:select id, content, creator, url, status, parent, createTime from comment c where postid='12' and (status='approve' ) order by c.createTime desc
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1749a262: close() called more than once.
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG getNextPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime > (select createTime from post where id=?) limit 1 
+DEBUG 2015/11/16 00:03:12 DEBUG getNextPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:03:12 DEBUG getNextPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:03:12 DEBUG PerformanceInterceptor:57 - use time->38 ms - id:com.zblog.core.dal.mapper.PostMapper.getNextPost - sql:select id,title from post where type='post' and createTime > (select createTime from post where id='12') limit 1
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1800e790: close() called more than once.
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG getPrevPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime < (select createTime from post where id=?) order by createTime desc limit 1 
+DEBUG 2015/11/16 00:03:12 DEBUG getPrevPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/16 00:03:12 DEBUG getPrevPost:139 - <==      Total: 0
+DEBUG 2015/11/16 00:03:12 DEBUG PerformanceInterceptor:57 - use time->74 ms - id:com.zblog.core.dal.mapper.PostMapper.getPrevPost - sql:select id,title from post where type='post' and createTime < (select createTime from post where id='12') order by createTime desc limit 1
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/16 00:03:12 DEBUG getOptionValue:139 - ==> Parameters: post_allowComment(String)
+DEBUG 2015/11/16 00:03:12 DEBUG getOptionValue:139 - <==      Total: 0
+DEBUG 2015/11/16 00:03:12 DEBUG PerformanceInterceptor:57 - use time->35 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'post_allowComment'
+DEBUG 2015/11/16 00:03:12 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@6b5c2d57 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c)
+DEBUG 2015/11/16 00:03:12 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@240f4b7: close() called more than once.
+DEBUG 2015/11/16 00:23:28 DEBUG ThreadPoolAsynchronousRunner:578 - Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main] interrupted. Shutting down.
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:962 - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@894f56e
+DEBUG 2015/11/16 00:23:28 DEBUG ThreadPoolAsynchronousRunner:578 - Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main] interrupted. Shutting down.
+DEBUG 2015/11/16 00:23:28 DEBUG ActiveManagementCoordinator:133 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge13a9d3an88nivav1j|54af73bd] unregistered.
+DEBUG 2015/11/16 00:23:28 DEBUG ThreadPoolAsynchronousRunner:578 - Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main] interrupted. Shutting down.
+DEBUG 2015/11/16 00:23:28 DEBUG ActiveManagementCoordinator:85 - C3P0Registry mbean unregistered.
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:468 - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@894f56e
+DEBUG 2015/11/16 00:23:28 DEBUG AbstractPoolBackedDataSource:417 - com.mchange.v2.c3p0.ComboPooledDataSource@54af73bd has been closed. 
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.close(AbstractPoolBackedDataSource.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:350)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:900)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:806)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:457)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:840)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:215)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:525)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:388)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:456)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+DEBUG 2015/11/16 00:23:28 DEBUG NewPooledConnection:566 - com.mchange.v2.c3p0.impl.NewPooledConnection@894f56e closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:566)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:476 - Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@894f56e
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:967 - Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@894f56e
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:962 - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6dfe843b
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:468 - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6dfe843b
+DEBUG 2015/11/16 00:23:28 DEBUG NewPooledConnection:566 - com.mchange.v2.c3p0.impl.NewPooledConnection@6dfe843b closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:566)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:476 - Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6dfe843b
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:967 - Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6dfe843b
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:962 - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:468 - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c
+DEBUG 2015/11/16 00:23:28 DEBUG NewPooledConnection:566 - com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:566)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+DEBUG 2015/11/16 00:23:28 DEBUG C3P0PooledConnectionPool:476 - Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c
+DEBUG 2015/11/16 00:23:28 DEBUG BasicResourcePool:967 - Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@2d3ab45c

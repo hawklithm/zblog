@@ -1,0 +1,1831 @@
+DEBUG 2015/11/27 23:14:46 DEBUG LogFactory:128 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO 2015/11/27 23:14:46  INFO MLog:80 - MLog clients using log4j logging.
+INFO 2015/11/27 23:14:46  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+DEBUG 2015/11/27 23:14:46 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge1399dkea2gu173c8b4|50850539] registered.
+DEBUG 2015/11/27 23:14:48 DEBUG LoginFilter:177 - Initializing filter 'LoginFilter'
+DEBUG 2015/11/27 23:14:48 DEBUG LoginFilter:202 - Filter 'LoginFilter' configured successfully
+DEBUG 2015/11/27 23:14:48 DEBUG XssFilter:177 - Initializing filter 'XssFilter'
+DEBUG 2015/11/27 23:14:48 DEBUG XssFilter:202 - Filter 'XssFilter' configured successfully
+DEBUG 2015/11/27 23:14:48 DEBUG StatelessCsrfFilter:177 - Initializing filter 'StatelessCsrfFilter'
+DEBUG 2015/11/27 23:14:48 DEBUG StatelessCsrfFilter:202 - Filter 'StatelessCsrfFilter' configured successfully
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:404 - incremented pending_acquires: 2
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:404 - incremented pending_acquires: 3
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:289 - com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 18000000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+INFO 2015/11/27 23:15:03  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1399dkea2gu173c8b4|50850539, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1399dkea2gu173c8b4|50850539, idleConnectionTestPeriod -> 18000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/myblog?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:538 - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:1291 - awaitAvailable(): [unknown]
+DEBUG 2015/11/27 23:15:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 0, unused: 0, excluded: 0]
+DEBUG 2015/11/27 23:15:04 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@490864ec.acquireResource() returning. 
+DEBUG 2015/11/27 23:15:04 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@490864ec.acquireResource() returning. 
+DEBUG 2015/11/27 23:15:04 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@490864ec.acquireResource() returning. 
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 1, unused: 1, excluded: 0]
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:422 - decremented pending_acquires: 2
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:422 - decremented pending_acquires: 1
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = ? 
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==> Parameters: uHHi9gvg81UXn4PLlLE(String)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:04 DEBUG PerformanceInterceptor:57 - use time->643 ms - id:com.zblog.core.dal.mapper.UserMapper.loadById - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where id = 'uHHi9gvg81UXn4PLlLE'
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:15:04 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:15:04 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:04 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,10 
+DEBUG 2015/11/27 23:15:04 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:04 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:04 DEBUG PerformanceInterceptor:57 - use time->14 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:04 DEBUG PerformanceInterceptor:57 - use time->24 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==>  Preparing: select id, name, visible from category where id = ? 
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - ==> Parameters: d3Lbk9G0GR3nO938cY0(String)
+DEBUG 2015/11/27 23:15:04 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:04 DEBUG PerformanceInterceptor:57 - use time->13 ms - id:com.zblog.core.dal.mapper.CategoryMapper.loadById - sql:select id, name, visible from category where id = 'd3Lbk9G0GR3nO938cY0'
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:04 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/27 23:15:04 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:04 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:04 DEBUG PerformanceInterceptor:57 - use time->20 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/27 23:15:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:05 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:05 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:15:05 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:15:05 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:05 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,10 
+DEBUG 2015/11/27 23:15:05 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:05 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:05 DEBUG PerformanceInterceptor:57 - use time->11 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:15:05 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==> Parameters: description(String)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:15:06 DEBUG PerformanceInterceptor:57 - use time->23 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'description'
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==> Parameters: description(String)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==> Parameters: keywords(String)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:06 DEBUG PerformanceInterceptor:57 - use time->24 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'keywords'
+DEBUG 2015/11/27 23:15:06 DEBUG PerformanceInterceptor:57 - use time->44 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'description'
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==> Parameters: title(String)
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:06 DEBUG PerformanceInterceptor:57 - use time->13 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'title'
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - ==> Parameters: title(String)
+DEBUG 2015/11/27 23:15:06 DEBUG getOptionValue:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:06 DEBUG PerformanceInterceptor:57 - use time->14 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'title'
+DEBUG 2015/11/27 23:15:06 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:15 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:15 DEBUG loadByNameAndPass:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = ? and password=md5(?) 
+DEBUG 2015/11/27 23:15:15 DEBUG loadByNameAndPass:139 - ==> Parameters: admin(String), Woshipom1(String)
+DEBUG 2015/11/27 23:15:15 DEBUG loadByNameAndPass:139 - <==      Total: 0
+DEBUG 2015/11/27 23:15:15 DEBUG PerformanceInterceptor:57 - use time->15 ms - id:com.zblog.core.dal.mapper.UserMapper.loadByNameAndPass - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = 'admin' and password=md5('Woshipom1')
+DEBUG 2015/11/27 23:15:15 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG loadByNameAndPass:139 - ==>  Preparing: select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = ? and password=md5(?) 
+DEBUG 2015/11/27 23:15:18 DEBUG loadByNameAndPass:139 - ==> Parameters: admin(String), Woshipm1(String)
+DEBUG 2015/11/27 23:15:18 DEBUG loadByNameAndPass:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.UserMapper.loadByNameAndPass - sql:select id, nickName, realName, password, email, role, status, createTime, creator, lastUpdate from user where nickName = 'admin' and password=md5('Woshipm1')
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG LoginFilter:77 - logon-->/backend/index
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==>  Preparing: select count(*) from user 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.UserMapper.count - sql:select count(*) from user
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@29f12b3b: close() called more than once.
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==>  Preparing: select count(*) from post 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.count - sql:select count(*) from post
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@77897332: close() called more than once.
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==>  Preparing: select count(*) from comment 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->11 ms - id:com.zblog.core.dal.mapper.CommentMapper.count - sql:select count(*) from comment
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==>  Preparing: select count(*) from upload 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:18 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.UploadMapper.count - sql:select count(*) from upload
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - ==>  Preparing: select * from comment c order by c.createTime desc limit 10 
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:18 DEBUG listRecent:139 - <==      Total: 0
+DEBUG 2015/11/27 23:15:18 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.CommentMapper.listRecent - sql:select * from comment c order by c.createTime desc limit 10
+DEBUG 2015/11/27 23:15:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:21 DEBUG LoginFilter:77 - logon-->/backend/categorys
+DEBUG 2015/11/27 23:15:21 DEBUG LoginFilter:77 - logon-->/backend/categorys/index
+DEBUG 2015/11/27 23:15:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:21 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/27 23:15:21 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:21 DEBUG list:139 - <==      Total: 2
+DEBUG 2015/11/27 23:15:21 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/27 23:15:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:21 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@195733f1: close() called more than once.
+DEBUG 2015/11/27 23:15:24 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/27 23:15:24 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:15:24 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:24 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:15:24 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:24 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:24 DEBUG list:139 - <==      Total: 2
+DEBUG 2015/11/27 23:15:24 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/27 23:15:24 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:26 DEBUG LoginFilter:77 - logon-->/backend/posts/edit
+DEBUG 2015/11/27 23:15:26 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:26 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/27 23:15:26 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:26 DEBUG list:139 - <==      Total: 2
+DEBUG 2015/11/27 23:15:26 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/27 23:15:26 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:27 DEBUG LoginFilter:77 - logon-->/backend/uploads/ueditor
+DEBUG 2015/11/27 23:15:35 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/27 23:15:35 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:35 DEBUG setNullPostid:139 - ==>  Preparing: update upload set postid=null where postid=? 
+DEBUG 2015/11/27 23:15:35 DEBUG setNullPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:35 DEBUG setNullPostid:139 - <==    Updates: 0
+DEBUG 2015/11/27 23:15:35 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.UploadMapper.setNullPostid - sql:update upload set postid=null where postid='12'
+DEBUG 2015/11/27 23:15:35 DEBUG update:139 - ==>  Preparing: update post set title=?,excerpt=?, content=?,parent=?, pstatus=?, categoryid=?, cstatus=?, lastUpdate=? where id=? 
+DEBUG 2015/11/27 23:15:35 DEBUG update:139 - ==> Parameters: 关于这个博客系统1(String), 这里是标题标题 这个文章更多是为了测试markdown写的，在github上发现了 https://github.com/dongfangshangren/Zblog 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就(String), java.io.StringReader@19151fde(StringReader), Root(String), publish(String), d3Lbk9G0GR3nO938cY0(String), open(String), 2015-11-27 23:15:35.111(Timestamp), 12(String)
+DEBUG 2015/11/27 23:15:35 DEBUG update:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:15:35 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.PostMapper.update - sql:update post set title='关于这个博客系统1',excerpt='这里是标题标题 这个文章更多是为了测试markdown写的，在github上发现了 https://github.com/dongfangshangren/Zblog 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就', content='<div id="epiceditor-preview">
+ <div id="epiceditor-preview"> 
+  <h1 id="-">这里是标题标题</h1> 
+  <p> 这个文章更多是为了测试markdown写的，在github上发现了 <a href="https://github.com/dongfangshangren/Zblog">https://github.com/dongfangshangren/Zblog</a> 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就是lucence的版本问题升级到5.2.1了 刚发现搜索那一块还有问题，各种不兼容，看样子只有重写了，顺带学一下lucence 先把搜索那块屏蔽掉了，结果尼玛发现markdown有问题</p> 
+  <h2 id="2015-11-21">2015-11-21</h2> 
+  <p> markdown的问题总算解决了，不知道为什么作者在初始化epiceditor的时候这么写的</p> 
+  <p><code>basePath: window.location.protocol+"//"+window.location.port+window.location.host+"/resource/epiceditor-0.2.3"</code></p> 
+  <p> 把多的那个port去掉就好了，改成</p> 
+  <p><code>basePath: window.location.protocol+"//"+window.location.host+"/resource/epiceditor-0.2.2"</code></p> 
+  <p> 对了，顺带我把epiceditor的版本换了一下</p> 
+ </div> 
+ <div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd"></div>
+</div>',parent='Root', pstatus='publish', categoryid='d3Lbk9G0GR3nO938cY0', cstatus='open', lastUpdate='2015-11-27 23:15:35' where id='12'
+DEBUG 2015/11/27 23:15:35 DEBUG deleteByPostid:139 - ==>  Preparing: delete from tag where postid=? 
+DEBUG 2015/11/27 23:15:35 DEBUG deleteByPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:35 DEBUG deleteByPostid:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:15:35 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.TagMapper.deleteByPostid - sql:delete from tag where postid='12'
+DEBUG 2015/11/27 23:15:35 DEBUG insertBatch:139 - ==>  Preparing: insert into tag(id,name,postid,createTime) values (?, ?, ?, ?) 
+DEBUG 2015/11/27 23:15:35 DEBUG insertBatch:139 - ==> Parameters: pUYbrIyFgTdpX3N2Vel(String), 随笔(String), 12(String), 2015-11-27 23:15:35.111(Timestamp)
+DEBUG 2015/11/27 23:15:35 DEBUG insertBatch:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:15:35 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.TagMapper.insertBatch - sql:insert into tag(id,name,postid,createTime) values ('pUYbrIyFgTdpX3N2Vel', '随笔', '12', '2015-11-27 23:15:35')
+INFO 2015/11/27 23:15:35  INFO ik-analyzer:271 - [Dict Loading]ik/custom/mydict.dic
+INFO 2015/11/27 23:15:35  INFO ik-analyzer:271 - [Dict Loading]ik/custom/single_word_low_freq.dic
+INFO 2015/11/27 23:15:35  INFO ik-analyzer:427 - [Dict Loading]ik/custom/ext_stopword.dic
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/27 23:15:36 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/27 23:15:36 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:36 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/27 23:15:36 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:36 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:36 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/27 23:15:36 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:15:36 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/27 23:15:36 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG cache:45 - Couldn't find template in cache for "recent.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/27 23:15:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh_CN.html"): Not found
+DEBUG 2015/11/27 23:15:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh.html"): Not found
+DEBUG 2015/11/27 23:15:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent.html"): Found
+DEBUG 2015/11/27 23:15:36 DEBUG cache:45 - Loading template for "recent.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/recent.html"
+INFO 2015/11/27 23:15:36  INFO StaticTemplate:138 - staticRecent
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG list:139 - ==>  Preparing: select name, count(*) as count from tag group by name order by createTime desc 
+DEBUG 2015/11/27 23:15:36 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:15:36 DEBUG NewPooledConnection:430 - com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a handling a throwable.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy49.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy47.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at sun.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.zblog.core.plugin.PerformanceInterceptor.intercept(PerformanceInterceptor.java:54)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:60)
+	at com.sun.proxy.$Proxy46.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy27.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy35.list(Unknown Source)
+	at com.zblog.service.BaseService.list(BaseService.java:25)
+	at com.zblog.service.BaseService$$FastClassBySpringCGLIB$$d272dccc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.service.TagService$$EnhancerBySpringCGLIB$$7cbb2b0e.list(<generated>)
+	at com.zblog.biz.aop.StaticTemplate.staticCloudTags(StaticTemplate.java:73)
+	at com.zblog.biz.aop.StaticTemplate.staticRecentOrHeader(StaticTemplate.java:140)
+	at com.zblog.biz.aop.StaticTemplate.postInsertOrUpdate(StaticTemplate.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:603)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:61)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+DEBUG 2015/11/27 23:15:36 DEBUG SqlUtils:85 - Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42000; errorCode: 1055]
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy49.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy47.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at sun.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.zblog.core.plugin.PerformanceInterceptor.intercept(PerformanceInterceptor.java:54)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:60)
+	at com.sun.proxy.$Proxy46.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy27.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy35.list(Unknown Source)
+	at com.zblog.service.BaseService.list(BaseService.java:25)
+	at com.zblog.service.BaseService$$FastClassBySpringCGLIB$$d272dccc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.service.TagService$$EnhancerBySpringCGLIB$$7cbb2b0e.list(<generated>)
+	at com.zblog.biz.aop.StaticTemplate.staticCloudTags(StaticTemplate.java:73)
+	at com.zblog.biz.aop.StaticTemplate.staticRecentOrHeader(StaticTemplate.java:140)
+	at com.zblog.biz.aop.StaticTemplate.postInsertOrUpdate(StaticTemplate.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:603)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:61)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+DEBUG 2015/11/27 23:15:36 DEBUG DefaultConnectionTester:126 - Testing a Connection in response to an Exception:
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy49.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy47.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at sun.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.zblog.core.plugin.PerformanceInterceptor.intercept(PerformanceInterceptor.java:54)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:60)
+	at com.sun.proxy.$Proxy46.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy27.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy35.list(Unknown Source)
+	at com.zblog.service.BaseService.list(BaseService.java:25)
+	at com.zblog.service.BaseService$$FastClassBySpringCGLIB$$d272dccc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.service.TagService$$EnhancerBySpringCGLIB$$7cbb2b0e.list(<generated>)
+	at com.zblog.biz.aop.StaticTemplate.staticCloudTags(StaticTemplate.java:73)
+	at com.zblog.biz.aop.StaticTemplate.staticRecentOrHeader(StaticTemplate.java:140)
+	at com.zblog.biz.aop.StaticTemplate.postInsertOrUpdate(StaticTemplate.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:603)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:61)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:15:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+ERROR 2015/11/27 23:15:36 ERROR LoginFilter:59 - error happend
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in mybatis/TagMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name, count(*) as count from tag group by name order by createTime desc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in mybatis/TagMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name, count(*) as count from tag group by name order by createTime desc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:91)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy27.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy35.list(Unknown Source)
+	at com.zblog.service.BaseService.list(BaseService.java:25)
+	at com.zblog.service.BaseService$$FastClassBySpringCGLIB$$d272dccc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.service.TagService$$EnhancerBySpringCGLIB$$7cbb2b0e.list(<generated>)
+	at com.zblog.biz.aop.StaticTemplate.staticCloudTags(StaticTemplate.java:73)
+	at com.zblog.biz.aop.StaticTemplate.staticRecentOrHeader(StaticTemplate.java:140)
+	at com.zblog.biz.aop.StaticTemplate.postInsertOrUpdate(StaticTemplate.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:603)
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:61)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	... 40 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'myblog.tag.createTime' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy49.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:59)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:73)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy47.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at sun.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.zblog.core.plugin.PerformanceInterceptor.intercept(PerformanceInterceptor.java:54)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:60)
+	at com.sun.proxy.$Proxy46.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 95 more
+DEBUG 2015/11/27 23:33:04 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:04 DEBUG NewPooledConnection:430 - com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a handling a throwable.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG SqlUtils:85 - Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 08S01; errorCode: 0]
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG DefaultConnectionTester:126 - Testing a Connection in response to an Exception:
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG DefaultConnectionTester:194 - Connection com.mysql.jdbc.JDBC4Connection@63d2081f failed default system-table Connection test with an Exception!
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1311)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1303)
+	at com.mysql.jdbc.ConnectionImpl.getMetaData(ConnectionImpl.java:3246)
+	at com.mysql.jdbc.ConnectionImpl.getMetaData(ConnectionImpl.java:3241)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.statusOnException(DefaultConnectionTester.java:143)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.statusOnException(AbstractConnectionTester.java:82)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.handleThrowable(NewPooledConnection.java:437)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:895)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	... 76 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG NewPooledConnection:449 - com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a invalidated by Exception.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG C3P0PooledConnectionPool:668 - CONNECTION ERROR OCCURRED!
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:731 - Resource com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a marked broken by pool (com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f).
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+DEBUG 2015/11/27 23:33:04 DEBUG NewPooledConnection:368 - An exception occurred while reseting a closed Connection. Invalidating Connection.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1311)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1303)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5300)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.resetTxnState(C3P0ImplUtils.java:277)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.reset(NewPooledConnection.java:388)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.markClosedProxyConnection(NewPooledConnection.java:362)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:1246)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doCloseConnection(DataSourceUtils.java:341)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:328)
+	at org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(DataSourceUtils.java:294)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:242)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	... 75 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:962 - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a
+ERROR 2015/11/27 23:33:04 ERROR LoginFilter:59 - error happend
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:879)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.StatelessCsrfFilter.doFilterInternal(StatelessCsrfFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.LoginFilter.doFilterInternal(LoginFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:84)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.zblog.web.filter.XssFilter.doFilterInternal(XssFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:313)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:626)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:546)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:245)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:463)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.biz.PostManager$$EnhancerBySpringCGLIB$$5ab1e8d1.updatePost(<generated>)
+	at com.zblog.web.backend.controller.PostController.update(PostController.java:94)
+	at com.zblog.web.backend.controller.PostController$$FastClassBySpringCGLIB$$2b3483db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.zblog.web.backend.controller.PostController$$EnhancerBySpringCGLIB$$5c5557f7.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	... 40 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,048,002 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3720)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4160)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:5346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:225)
+	... 75 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3166)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3620)
+	... 83 more
+DEBUG 2015/11/27 23:33:04 DEBUG C3P0PooledConnectionPool:468 - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a
+DEBUG 2015/11/27 23:33:04 DEBUG NewPooledConnection:566 - com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:566)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+DEBUG 2015/11/27 23:33:04 DEBUG C3P0PooledConnectionPool:476 - Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:967 - Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@3859312a
+DEBUG 2015/11/27 23:33:04 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@490864ec.acquireResource() returning. 
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:04 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+DEBUG 2015/11/27 23:33:18 DEBUG LoginFilter:77 - logon-->/backend/posts
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG setNullPostid:139 - ==>  Preparing: update upload set postid=null where postid=? 
+DEBUG 2015/11/27 23:33:18 DEBUG setNullPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:33:18 DEBUG setNullPostid:139 - <==    Updates: 0
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->16 ms - id:com.zblog.core.dal.mapper.UploadMapper.setNullPostid - sql:update upload set postid=null where postid='12'
+DEBUG 2015/11/27 23:33:18 DEBUG update:139 - ==>  Preparing: update post set title=?,excerpt=?, content=?,parent=?, pstatus=?, categoryid=?, cstatus=?, lastUpdate=? where id=? 
+DEBUG 2015/11/27 23:33:18 DEBUG update:139 - ==> Parameters: 关于这个博客系统1(String), 这里是标题标题 这个文章更多是为了测试markdown写的，在github上发现了 https://github.com/dongfangshangren/Zblog 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就(String), java.io.StringReader@56946f7e(StringReader), Root(String), publish(String), d3Lbk9G0GR3nO938cY0(String), open(String), 2015-11-27 23:33:18.872(Timestamp), 12(String)
+DEBUG 2015/11/27 23:33:18 DEBUG update:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.PostMapper.update - sql:update post set title='关于这个博客系统1',excerpt='这里是标题标题 这个文章更多是为了测试markdown写的，在github上发现了 https://github.com/dongfangshangren/Zblog 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就', content='<div id="epiceditor-preview">
+ <div id="epiceditor-preview"> 
+  <h1 id="-">这里是标题标题</h1> 
+  <p> 这个文章更多是为了测试markdown写的，在github上发现了 <a href="https://github.com/dongfangshangren/Zblog">https://github.com/dongfangshangren/Zblog</a> 这个项目，挺有意思的，于是fork了一份，然后用java8作为fork项目的jdk进行编写。替换了datasource，将文章分类的sql里面的name列添加了unique属性，修复了类目重复的问题（当你在创建类目的时候点确定过快，可能实际创建了两个），其实unique的方法也不好，应该在请求上添加唯一键，只因为这个博客有个bug，删除类目的时候回去读取类目，但是返回参数却限定为一个，但是可能是有两个同名类目，会导致mybatis抛异常,so,干脆改成不许重名，其实删除应该按照类目id来做，后续改掉吧。 然后另外一个问题呢，就是lucence的版本问题升级到5.2.1了 刚发现搜索那一块还有问题，各种不兼容，看样子只有重写了，顺带学一下lucence 先把搜索那块屏蔽掉了，结果尼玛发现markdown有问题</p> 
+  <h2 id="2015-11-21">2015-11-21</h2> 
+  <p> markdown的问题总算解决了，不知道为什么作者在初始化epiceditor的时候这么写的</p> 
+  <p><code>basePath: window.location.protocol+"//"+window.location.port+window.location.host+"/resource/epiceditor-0.2.3"</code></p> 
+  <p> 把多的那个port去掉就好了，改成</p> 
+  <p><code>basePath: window.location.protocol+"//"+window.location.host+"/resource/epiceditor-0.2.2"</code></p> 
+  <p> 对了，顺带我把epiceditor的版本换了一下</p> 
+ </div> 
+ <div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd"></div>
+</div>',parent='Root', pstatus='publish', categoryid='d3Lbk9G0GR3nO938cY0', cstatus='open', lastUpdate='2015-11-27 23:33:18' where id='12'
+DEBUG 2015/11/27 23:33:18 DEBUG deleteByPostid:139 - ==>  Preparing: delete from tag where postid=? 
+DEBUG 2015/11/27 23:33:18 DEBUG deleteByPostid:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:33:18 DEBUG deleteByPostid:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->9 ms - id:com.zblog.core.dal.mapper.TagMapper.deleteByPostid - sql:delete from tag where postid='12'
+DEBUG 2015/11/27 23:33:18 DEBUG insertBatch:139 - ==>  Preparing: insert into tag(id,name,postid,createTime) values (?, ?, ?, ?) 
+DEBUG 2015/11/27 23:33:18 DEBUG insertBatch:139 - ==> Parameters: SdimL14PmsvktHihQnQ(String), 随笔(String), 12(String), 2015-11-27 23:33:18.872(Timestamp)
+DEBUG 2015/11/27 23:33:18 DEBUG insertBatch:139 - <==    Updates: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.TagMapper.insertBatch - sql:insert into tag(id,name,postid,createTime) values ('SdimL14PmsvktHihQnQ', '随笔', '12', '2015-11-27 23:33:18')
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/27 23:33:18 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/27 23:33:18 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG loadById:139 - ==>  Preparing: select * from post where id = ? 
+DEBUG 2015/11/27 23:33:18 DEBUG loadById:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:33:18 DEBUG loadById:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.PostMapper.loadById - sql:select * from post where id = '12'
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG getTagsByPost:139 - ==>  Preparing: select name from tag where postid=? 
+DEBUG 2015/11/27 23:33:18 DEBUG getTagsByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:33:18 DEBUG getTagsByPost:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.TagMapper.getTagsByPost - sql:select name from tag where postid='12'
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG cache:45 - Couldn't find template in cache for "recent.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/27 23:33:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh_CN.html"): Not found
+DEBUG 2015/11/27 23:33:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent_zh.html"): Not found
+DEBUG 2015/11/27 23:33:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("recent.html"): Found
+DEBUG 2015/11/27 23:33:18 DEBUG cache:45 - Loading template for "recent.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/recent.html"
+INFO 2015/11/27 23:33:18  INFO StaticTemplate:138 - staticRecent
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:18 DEBUG list:139 - ==>  Preparing: select name, count(*) as count from tag group by name order by createTime desc 
+DEBUG 2015/11/27 23:33:18 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:33:18 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:18 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.TagMapper.list - sql:select name, count(*) as count from tag group by name order by createTime desc
+DEBUG 2015/11/27 23:33:18 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - Couldn't find template in cache for "tagcloud.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh_CN.html"): Not found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud_zh.html"): Not found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("tagcloud.html"): Found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - Loading template for "tagcloud.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/tagcloud.html"
+INFO 2015/11/27 23:33:19  INFO StaticTemplate:85 - staticCloudTags
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG listArchive:139 - ==>  Preparing: select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc 
+DEBUG 2015/11/27 23:33:19 DEBUG listArchive:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:33:19 DEBUG listArchive:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:19 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.PostMapper.listArchive - sql:select createTime ,count(*) as count from post where type='post' group by date_format(createTime,'%Y%m') order by createTime desc
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - Couldn't find template in cache for "archive.html"("zh_CN", UTF-8, parsed); will try to load it.
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh_CN.html"): Not found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive_zh.html"): Not found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("archive.html"): Found
+DEBUG 2015/11/27 23:33:19 DEBUG cache:45 - Loading template for "archive.html"("zh_CN", UTF-8, parsed) from "/Users/hawky/workspace/project/blog/target/classes/ftl/archive.html"
+INFO 2015/11/27 23:33:19  INFO StaticTemplate:99 - staticArchive
+DEBUG 2015/11/27 23:33:19 DEBUG LoginFilter:77 - logon-->/backend/posts/
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:33:19 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:19 DEBUG PerformanceInterceptor:57 - use time->13 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@65584592: close() called more than once.
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:33:19 DEBUG list:139 - <==      Total: 2
+DEBUG 2015/11/27 23:33:19 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/27 23:33:19 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:36 DEBUG LoginFilter:77 - logon-->/backend/posts/
+DEBUG 2015/11/27 23:33:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:33:36 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,15 
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:33:36 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:33:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:36 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@1a9849f9: close() called more than once.
+DEBUG 2015/11/27 23:33:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==>  Preparing: select id, name, level,visible from view_category 
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:33:36 DEBUG list:139 - <==      Total: 2
+DEBUG 2015/11/27 23:33:36 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.CategoryMapper.list - sql:select id, name, level,visible from view_category
+DEBUG 2015/11/27 23:33:36 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG LoginFilter:77 - logon-->/backend/index
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==>  Preparing: select count(*) from user 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.UserMapper.count - sql:select count(*) from user
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==>  Preparing: select count(*) from post 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.PostMapper.count - sql:select count(*) from post
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==>  Preparing: select count(*) from comment 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.CommentMapper.count - sql:select count(*) from comment
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==>  Preparing: select count(*) from upload 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:53:56 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.UploadMapper.count - sql:select count(*) from upload
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - ==>  Preparing: select * from comment c order by c.createTime desc limit 10 
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:53:56 DEBUG listRecent:139 - <==      Total: 0
+DEBUG 2015/11/27 23:53:56 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.CommentMapper.listRecent - sql:select * from comment c order by c.createTime desc limit 10
+DEBUG 2015/11/27 23:53:56 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG LoginFilter:77 - logon-->/backend/index
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==>  Preparing: select count(*) from user 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->2 ms - id:com.zblog.core.dal.mapper.UserMapper.count - sql:select count(*) from user
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@5992d5bf: close() called more than once.
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==>  Preparing: select count(*) from post 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->4 ms - id:com.zblog.core.dal.mapper.PostMapper.count - sql:select count(*) from post
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==>  Preparing: select count(*) from comment 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.CommentMapper.count - sql:select count(*) from comment
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==>  Preparing: select count(*) from upload 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:54:03 DEBUG count:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.UploadMapper.count - sql:select count(*) from upload
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - ==>  Preparing: select id from post where type='post' order by createTime desc limit ? 
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - ==> Parameters: 10(Integer)
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.PostMapper.listRecent - sql:select id from post where type='post' order by createTime desc limit 10
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - ==>  Preparing: select * from comment c order by c.createTime desc limit 10 
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - ==> Parameters: 
+DEBUG 2015/11/27 23:54:03 DEBUG listRecent:139 - <==      Total: 0
+DEBUG 2015/11/27 23:54:03 DEBUG PerformanceInterceptor:57 - use time->5 ms - id:com.zblog.core.dal.mapper.CommentMapper.listRecent - sql:select * from comment c order by c.createTime desc limit 10
+DEBUG 2015/11/27 23:54:03 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:03 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@c2a7553: close() called more than once.
+DEBUG 2015/11/27 23:54:07 DEBUG LoginFilter:77 - logon-->/
+DEBUG 2015/11/27 23:54:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:07 DEBUG list:139 - ==>  Preparing: select count(*) from ( select id from post p where p.type=? order by p.createTime desc ) _temp_ 
+DEBUG 2015/11/27 23:54:07 DEBUG BeanPropertyUtils:37 - can't found field mappedStatement in class class org.apache.ibatis.executor.statement.PreparedStatementHandler
+DEBUG 2015/11/27 23:54:07 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:54:07 DEBUG list:139 - ==>  Preparing: select id from post p where p.type=? order by p.createTime desc limit 0,10 
+DEBUG 2015/11/27 23:54:07 DEBUG list:139 - ==> Parameters: post(String)
+DEBUG 2015/11/27 23:54:07 DEBUG list:139 - <==      Total: 1
+DEBUG 2015/11/27 23:54:07 DEBUG PerformanceInterceptor:57 - use time->8 ms - id:com.zblog.core.dal.mapper.PostMapper.list - sql:select id from post p where p.type='post' order by p.createTime desc
+DEBUG 2015/11/27 23:54:07 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:14 DEBUG LoginFilter:77 - logon-->/
+DEBUG 2015/11/27 23:54:21 DEBUG LoginFilter:77 - logon-->/posts/12
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:21 DEBUG listByPost:139 - ==>  Preparing: select id, content, creator, url, status, parent, createTime from comment c where postid=? and (status='approve' ) order by c.createTime desc 
+DEBUG 2015/11/27 23:54:21 DEBUG listByPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:54:21 DEBUG listByPost:139 - <==      Total: 0
+DEBUG 2015/11/27 23:54:21 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.CommentMapper.listByPost - sql:select id, content, creator, url, status, parent, createTime from comment c where postid='12' and (status='approve' ) order by c.createTime desc
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:21 DEBUG getNextPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime > (select createTime from post where id=?) limit 1 
+DEBUG 2015/11/27 23:54:21 DEBUG getNextPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:54:21 DEBUG getNextPost:139 - <==      Total: 0
+DEBUG 2015/11/27 23:54:21 DEBUG PerformanceInterceptor:57 - use time->6 ms - id:com.zblog.core.dal.mapper.PostMapper.getNextPost - sql:select id,title from post where type='post' and createTime > (select createTime from post where id='12') limit 1
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:21 DEBUG getPrevPost:139 - ==>  Preparing: select id,title from post where type='post' and createTime < (select createTime from post where id=?) order by createTime desc limit 1 
+DEBUG 2015/11/27 23:54:21 DEBUG getPrevPost:139 - ==> Parameters: 12(String)
+DEBUG 2015/11/27 23:54:21 DEBUG getPrevPost:139 - <==      Total: 0
+DEBUG 2015/11/27 23:54:21 DEBUG PerformanceInterceptor:57 - use time->3 ms - id:com.zblog.core.dal.mapper.PostMapper.getPrevPost - sql:select id,title from post where type='post' and createTime < (select createTime from post where id='12') order by createTime desc limit 1
+DEBUG 2015/11/27 23:54:21 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:22 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:22 DEBUG getOptionValue:139 - ==>  Preparing: select value from options where id = ? 
+DEBUG 2015/11/27 23:54:22 DEBUG getOptionValue:139 - ==> Parameters: post_allowComment(String)
+DEBUG 2015/11/27 23:54:22 DEBUG getOptionValue:139 - <==      Total: 0
+DEBUG 2015/11/27 23:54:22 DEBUG PerformanceInterceptor:57 - use time->7 ms - id:com.zblog.core.dal.mapper.OptionMapper.getOptionValue - sql:select value from options where id = 'post_allowComment'
+DEBUG 2015/11/27 23:54:22 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@1e3d7a7f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f14e342)
+DEBUG 2015/11/27 23:54:22 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@71301437: close() called more than once.
+DEBUG 2015/11/27 23:54:28 DEBUG LoginFilter:77 - logon-->/
