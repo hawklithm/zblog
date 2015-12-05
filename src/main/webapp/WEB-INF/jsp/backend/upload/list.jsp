@@ -37,7 +37,7 @@
                      <td class="filename"><strong>${upload.name}</strong><p class="fileformat">${z:fileExt(upload.name)}</p>
                         <div class="row-action">
                           <span><a href="javascript:zblog.upload.remove('${upload.id}');">永久删除</a>&nbsp;|&nbsp;</span>
-                          <span><a href="#">查看</a></span>
+                          <span><a href="${upload.path}">查看</a></span>
                         </div></td>
                      <td>${upload.user.nickName}</td><td><a href='/posts/${upload.post.id}' target="_blank">${upload.post.title}</a></td>
                      <td><fmt:formatDate value="${upload.createTime}" pattern="yyyy-MM-dd"/></td>
