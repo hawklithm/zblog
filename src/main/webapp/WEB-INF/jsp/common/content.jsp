@@ -5,7 +5,7 @@
 <c:if test="${post.type=='post'}">
 <div id="bread_crumb">
   <ul class="clearfix">
-   <li><a title="首页" href="${g.domain}">首页</a></li>
+   <li><a title="首页" href="/">首页</a></li>
    <li><a href="/categorys/${post.category.name}">${post.category.name}</a></li>
    <li class="last">${post.title}</li>
   </ul>

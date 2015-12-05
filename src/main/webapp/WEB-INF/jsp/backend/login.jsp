@@ -11,7 +11,7 @@
      <c:if test="${msg!=null}"><p class="message">${msg}<br></p></c:if>
      <div id="logo">
        <img title="Zblog" src="../../resource/img/logo.png" />
-       <p><a href="${g.domain}" title="不知道自己在哪">← 回到${g.title}</a></p>
+       <p><a href="/" title="不知道自己在哪">← 回到${g.title}</a></p>
      </div>
      <form id="loginform" method="post">
        <input type="hidden" name="CSRFToken" value="${CSRFToken}" />
