@@ -69,11 +69,11 @@
       <div id="page_nav">
         <div class="clearfix page">
           <ul class="page-numbers">
-<!--         <li><span class="current">1</span></li>
-             <li><a href="#">2</a></li>
-             <li><span class="dots">…</span></li>
-              <li><a href="#">66</a></li>
-              <li><a href="#">>></a></li> -->
+<%--<!--         <li><span class="current">1</span></li>--%>
+             <%--<li><a href="#">2</a></li>--%>
+             <%--<li><span class="dots">…</span></li>--%>
+              <%--<li><a href="#">66</a></li>--%>
+              <%--<li><a href="#">>></a></li> -->--%>
              <page:page model="${page}" pageUrl="${request.requestURL}" showPage="9" boundary="2">
                <page:prev>
                  <li><a href="${pageUrl}"><<</a></li>

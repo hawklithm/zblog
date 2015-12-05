@@ -91,7 +91,7 @@ public class Pagination<T> extends TagSupport{
 
   @Override
   public int doStartTag() throws JspException{
-    if(model.getTotalPage() < 2)
+    if(model!=null&&model.getTotalPage() < 2)
       return TagSupport.SKIP_BODY;
 
     this.pageUrl = genPageUrl();
