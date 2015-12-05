@@ -5,9 +5,9 @@
 <html>
  <head>
   <jsp:include page="../common/bootstrap.jsp" flush="false" />
-  <script type="text/javascript" src="${g.domain}/resource/ueditor-1.4.3/ueditor.config.js"></script>
-  <script type="text/javascript" src="${g.domain}/resource/ueditor-1.4.3/ueditor.all.js"></script>
-  <script type="text/javascript" src="${g.domain}/resource/epiceditor-0.2.2/js/epiceditor.js"></script>
+  <script type="text/javascript" src="/resource/ueditor-1.4.3/ueditor.config.js"></script>
+  <script type="text/javascript" src="/resource/ueditor-1.4.3/ueditor.all.js"></script>
+  <script type="text/javascript" src="/resource/epiceditor-0.2.2/js/epiceditor.js"></script>
  </head>
  <body style="margin-top: 50px;">
   <jsp:include page="../common/navbar.jsp" flush="false" />
@@ -97,6 +97,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.post.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.post.js"></script>
  </body>
 </html>

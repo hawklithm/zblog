@@ -43,4 +43,4 @@
  </c:otherwise>
 </c:choose>
 </fieldset>
-<script src="${g.domain}/resource/js/zblog.js"></script>
+<script src="/resource/js/zblog.js"></script>

@@ -48,10 +48,10 @@
                         <a href="${comment.url}">${z:getDomainLink(comment.url)}</a><br/>
                         <a href="mailto:${comment.email}">${comment.email}</a></br/>
                         <a href="#">${comment.ip}</a></td>
-                      <td><div>提交于<a href="${g.domain}/posts/${comment.postid}/#comment-${comment.id}" target="_blank">
+                      <td><div>提交于<a href="/posts/${comment.postid}/#comment-${comment.id}" target="_blank">
                             <fmt:formatDate value="${comment.createTime}" pattern="yyyy-MM-dd ahh:mm"/></a>
                             <c:if test="${comment.pid!=null}">| 回复给 
-                              <a href="${g.domain}/posts/${comment.postid}/#comment-${comment.pid}" target="_blank">${comment.pcreator}</a>
+                              <a href="/posts/${comment.postid}/#comment-${comment.pid}" target="_blank">${comment.pcreator}</a>
                             </c:if>
                            </div>
                           <p style="margin: 7px 0;">${comment.content}</p>
@@ -78,7 +78,7 @@
                             </c:if>
                           </div>
                       </td>
-                      <td><a href="${g.domain}/posts/${comment.postid}" target="_blank">${comment.title}</a><br /></td>
+                      <td><a href="/posts/${comment.postid}" target="_blank">${comment.title}</a><br /></td>
                       <td class="center"><span class="glyphicon glyphicon-trash pointer" onclick="zblog.comment.remove('${comment.id}')"></span></td>
                    </tr>
                </c:forEach>
@@ -100,6 +100,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.comment.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.comment.js"></script>
  </body>
 </html>

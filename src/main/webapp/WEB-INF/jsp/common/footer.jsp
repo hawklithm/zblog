@@ -6,4 +6,4 @@
   </p>
   <a id="return_top" href="#">Return Top</a>
 </div>
-<script src="${g.domain}/resource/js/jscript.js"></script>
+<script src="/resource/js/jscript.js"></script>

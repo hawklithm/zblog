@@ -36,7 +36,7 @@
                      <div class="row-action">
                        <span class="edit"><a href="#">编辑</a>&nbsp;|&nbsp;</span>
                        <span class="trash"><a href="#">移到回收站</a>&nbsp;|&nbsp;</span>
-                       <span class="view"><a target="_blank" href="${g.domain}/pages/${post.id}">查看</a></span>
+                       <span class="view"><a target="_blank" href="/pages/${post.id}">查看</a></span>
                      </div></td><td>${post.user.nickName}</td>
                      <td><fmt:formatDate value="${post.createTime}" pattern="yyyy-MM-dd" /></td>
                      <td class="center"><span class="icon glyphicon glyphicon-pencil pointer" onclick="zblog.page.edit('${post.id}')"></span>
@@ -60,6 +60,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.page.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.page.js"></script>
  </body>
 </html>

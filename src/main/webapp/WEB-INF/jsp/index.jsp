@@ -25,19 +25,19 @@
       <c:forEach items="${page.content}" var="post">
       <div class="post_wrap clearfix">
         <div class="post">
-          <h3 class="title"><a href="${g.domain}/posts/${post.id}">
+          <h3 class="title"><a href="/posts/${post.id}">
           <c:if test="${post.pstatus=='secret'}">私密:</c:if>
           ${post.title}</a></h3>
           <div class="post_content">
             <p class="excerpt">${post.excerpt}...</p>
-            <p><a class="more_link" href="${g.domain}/posts/${post.id}">阅读全文</a></p>
+            <p><a class="more_link" href="/posts/${post.id}">阅读全文</a></p>
           </div>
           <c:if test="${post.tags!=null&&fn:length(post.tags)!=0}">
             <div class="post_tags clearfix">
               <ul class="clearfix">
                 <li></li>
                 <c:forEach items="${post.tags}" var="tag">
-                   <li><a href="${g.domain}/tags/${tag}">${tag}</a></li>
+                   <li><a href="/tags/${tag}">${tag}</a></li>
                 </c:forEach>
               </ul>
             </div>
@@ -52,10 +52,10 @@
             </li>
             <li class="post_read">${post.rcount}人阅读</li>
             <li class="post_author">
-              <a rel="author" title="由${post.user.nickName}发布" href="${g.domain}/authors/${post.creator}">${post.user.nickName}</a>
+              <a rel="author" title="由${post.user.nickName}发布" href="/authors/${post.creator}">${post.user.nickName}</a>
             </li>
             <li class="post_comment">
-               <a title="${post.title}的评论" href="${g.domain}/posts/${post.id}/#respond">
+               <a title="${post.title}的评论" href="/posts/${post.id}/#respond">
                  <c:choose>
                    <c:when test="${post.ccount>0}">${post.ccount}条评论</c:when>
                    <c:otherwise>发表评论</c:otherwise>
@@ -104,7 +104,7 @@
      <div id="introduction_widget" class="side_widget clearfix">
       <h3 class="headline">About</h3>
       <ul id="social_link">
-        <li class="rss_button"><a target="_blank" href="${g.domain}/feed"></a></li>
+        <li class="rss_button"><a target="_blank" href="/feed"></a></li>
         <li class="github_button"><a target="_blank" href="https://github.com/hawklithm"></a></li>
       </ul>
       <p>You can show your site introduction by using Site Introduction Widget. 

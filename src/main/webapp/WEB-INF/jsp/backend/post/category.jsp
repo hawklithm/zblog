@@ -4,7 +4,7 @@
 <html>
  <head>
   <jsp:include page="../common/bootstrap.jsp" flush="false" />
-  <link rel="stylesheet" href="${g.domain}/resource/zdialog/alert.css" type='text/css'>
+  <link rel="stylesheet" href="/resource/zdialog/alert.css" type='text/css'>
  </head>
  <body style="margin-top: 50px;">
   <jsp:include page="../common/navbar.jsp" flush="false" />
@@ -55,8 +55,8 @@
      </div>
    </div>
   
-  <script type="text/javascript" src="${g.domain}/resource/bootstrap-tree/bootstrap-treeview.min.js"></script>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.category.js"></script>
-  <script type="text/javascript" src="${g.domain}/resource/zdialog/alert.js"></script>
+  <script type="text/javascript" src="/resource/bootstrap-tree/bootstrap-treeview.min.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.category.js"></script>
+  <script type="text/javascript" src="/resource/zdialog/alert.js"></script>
  </body>
 </html>

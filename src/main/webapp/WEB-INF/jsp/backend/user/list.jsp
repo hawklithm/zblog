@@ -61,6 +61,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.user.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.user.js"></script>
  </body>
 </html>

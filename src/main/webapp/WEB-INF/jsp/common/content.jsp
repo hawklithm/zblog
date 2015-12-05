@@ -6,7 +6,7 @@
 <div id="bread_crumb">
   <ul class="clearfix">
    <li><a title="首页" href="${g.domain}">首页</a></li>
-   <li><a href="${g.domain}/categorys/${post.category.name}">${post.category.name}</a></li>
+   <li><a href="/categorys/${post.category.name}">${post.category.name}</a></li>
    <li class="last">${post.title}</li>
   </ul>
 </div>
@@ -35,7 +35,7 @@
      </li>
      <li class="post_read">${post.rcount}人阅读</li>
      <c:if test="${post.type=='post'}">
-       <li class="post_category"><a href="${g.domain}/categorys/${post.category.name}">${post.category.name}</a></li>
+       <li class="post_category"><a href="/categorys/${post.category.name}">${post.category.name}</a></li>
      </c:if>
      <li class="post_author">
        <a title="由${post.user.nickName}发布" href="#">${post.user.nickName}</a>

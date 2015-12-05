@@ -5,7 +5,7 @@
 <html>
  <head>
   <jsp:include page="../common/bootstrap.jsp" flush="false" />
-  <link rel="stylesheet" href="${g.domain}/resource/webuploader-0.1.5/webuploader.css" />
+  <link rel="stylesheet" href="/resource/webuploader-0.1.5/webuploader.css" />
  </head>
  <body style="margin-top: 50px;">
   <jsp:include page="../common/navbar.jsp" flush="false" />
@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/webuploader-0.1.5/webuploader.min.js"></script>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/upload.js"></script>
+  <script type="text/javascript" src="/resource/webuploader-0.1.5/webuploader.min.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/upload.js"></script>
  </body>
 </html>

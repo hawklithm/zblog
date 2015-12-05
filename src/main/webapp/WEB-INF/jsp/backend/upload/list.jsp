@@ -39,7 +39,7 @@
                           <span><a href="javascript:zblog.upload.remove('${upload.id}');">永久删除</a>&nbsp;|&nbsp;</span>
                           <span><a href="#">查看</a></span>
                         </div></td>
-                     <td>${upload.user.nickName}</td><td><a href='${g.domain}/posts/${upload.post.id}' target="_blank">${upload.post.title}</a></td>
+                     <td>${upload.user.nickName}</td><td><a href='/posts/${upload.post.id}' target="_blank">${upload.post.title}</a></td>
                      <td><fmt:formatDate value="${upload.createTime}" pattern="yyyy-MM-dd"/></td>
                      <td class="center">
                        <span class="glyphicon glyphicon-trash pointer" onclick="zblog.upload.remove('${upload.id}');"></span></td></tr>
@@ -62,6 +62,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.upload.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.upload.js"></script>
  </body>
 </html>

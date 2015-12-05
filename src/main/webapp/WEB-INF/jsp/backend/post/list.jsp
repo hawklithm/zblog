@@ -44,7 +44,7 @@
                        <span><a href="#">编辑</a>&nbsp;|&nbsp;</span>
                        <span><a href="#" onclick="zblog.post.fastedit('${post.id}')">快速编辑</a>&nbsp;|&nbsp;</span>
                        <span><a href="#">移到回收站</a>&nbsp;|&nbsp;</span>
-                       <span><a target="_blank" href="${g.domain}/pages/${post.id}">查看</a></span>
+                       <span><a target="_blank" href="/pages/${post.id}">查看</a></span>
                      </div></td><td class="post-author">${post.user.nickName}</td>
                      <td class="post-category">${post.category.name}</td>
                      <td class="post-ctime"><fmt:formatDate value="${post.createTime}" pattern="yyyy-MM-dd" /></td>
@@ -101,6 +101,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="${g.domain}/resource/js/backend/admin.post.js"></script>
+  <script type="text/javascript" src="/resource/js/backend/admin.post.js"></script>
  </body>
 </html>
