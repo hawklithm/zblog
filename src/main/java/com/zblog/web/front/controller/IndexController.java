@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.stream.XMLStreamException;
 
+import com.zblog.biz.WisdomGetManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,6 +29,7 @@ import com.zblog.core.util.ServletUtils;
 import com.zblog.core.util.StringUtils;
 import com.zblog.service.OptionsService;
 import com.zblog.service.vo.PostVO;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController{
@@ -37,6 +39,8 @@ public class IndexController{
   private StaticTemplate staticTemplate;
   @Autowired
   private OptionsService optionsService;
+  @Autowired
+  private WisdomGetManager wisdomGetManager;
 
   @RequestMapping(value = "/", method = RequestMethod.GET)
   public String index(@RequestParam(value = "page", defaultValue = "1") int page, String word, Model model){
@@ -50,6 +54,13 @@ public class IndexController{
     }
 
     return "index";
+  }
+
+  @RequestMapping(value = "/wisdom")
+  @ResponseBody
+  public String wisdom(){
+    String wisdom = wisdomGetManager.getWisdom();
+    return wisdom;
   }
 
   @RequestMapping(value = "/feed")

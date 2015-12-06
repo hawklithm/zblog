@@ -6,4 +6,5 @@
   </p>
   <a id="return_top" href="#">Return Top</a>
 </div>
+<script src="/resource/js/FUNction.js"></script>
 <script src="/resource/js/jscript.js"></script>
