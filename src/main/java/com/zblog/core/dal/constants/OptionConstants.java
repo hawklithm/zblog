@@ -8,6 +8,11 @@ public final class OptionConstants{
    * 站点标题
    */
   public static final String TITLE = "title";
+
+  /**
+   * 微博验证code
+   */
+  public static final String WEIBO_CODE = "weibocode";
   /**
    * 站点副标题
    */

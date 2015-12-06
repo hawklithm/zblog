@@ -65,6 +65,13 @@
                    <p class="help-block">这个电子邮件地址仅为了管理方便而索要，例如新注册用户通知。</p>
                  </div>
                </div>
+                <div class="form-group">
+                    <label class="col-sm-3" for="weibocode">微博验证代码 </label>
+                    <div class="col-sm-6">
+                        <input name="weibocode" class="form-control" type="text" value="${form.weibocode}" />
+                        <p class="help-block">开放到微博平台需要在首页添加一个的验证code</p>
+                    </div>
+                </div>
                <div class="form-group">
                  <label class="col-sm-3">成员资格</label>
                  <div class="col-sm-6">

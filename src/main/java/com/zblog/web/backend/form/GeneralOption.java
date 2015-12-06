@@ -1,5 +1,8 @@
 package com.zblog.web.backend.form;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * 默认设置表单
  * 
@@ -12,6 +15,8 @@ public class GeneralOption{
   private String description;
   private String keywords;
   private String weburl;
+  @Setter @Getter
+  private String weibocode;
 
   public String getTitle(){
     return title;

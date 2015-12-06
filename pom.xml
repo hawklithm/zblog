@@ -258,6 +258,12 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
+    <!--添加lombok支持-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.4</version>
+    </dependency>
 
 
 

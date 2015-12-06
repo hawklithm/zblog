@@ -20,6 +20,10 @@ public class Global{
     this.domain = domain;
   }
 
+  public String getWeibocode(){
+    return getOptionValue(OptionConstants.WEIBO_CODE);
+  }
+
   public String getTitle(){
     return getOptionValue(OptionConstants.TITLE);
   }

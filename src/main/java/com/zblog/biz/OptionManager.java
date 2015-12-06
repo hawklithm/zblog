@@ -29,6 +29,7 @@ public class OptionManager{
     optionsService.updateOptionValue(OptionConstants.SUBTITLE, form.getSubtitle());
     optionsService.updateOptionValue(OptionConstants.DESCRIPTION, form.getDescription());
     optionsService.updateOptionValue(OptionConstants.KEYWORDS, form.getKeywords());
+    optionsService.updateOptionValue(OptionConstants.WEIBO_CODE,form.getWeibocode());
   }
 
   @Transactional
@@ -74,6 +75,7 @@ public class OptionManager{
       form.setDescription(optionsService.getOptionValue(OptionConstants.DESCRIPTION));
       form.setKeywords(optionsService.getOptionValue(OptionConstants.KEYWORDS));
       form.setWeburl(optionsService.getOptionValue("weburl"));
+      form.setWeibocode(optionsService.getOptionValue(OptionConstants.WEIBO_CODE));
     }else{
       form = null;
     }

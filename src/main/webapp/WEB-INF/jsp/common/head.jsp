@@ -16,6 +16,8 @@
 <meta name="keywords" content="${g.keywords}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<%--微博验证信息--%>
+<meta property="wb:webmaster" content="${g.weibocode}" />
 <title>${ptitle}${ptitle!=null?' | ':''}${g.title}</title>
 <link rel="icon" href="/resource/img/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="/resource/css/style.css">
