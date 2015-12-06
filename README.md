@@ -20,6 +20,9 @@ a java blog
 13.	文章markdown/富文本编辑支持、快速编辑
 14.	响应式布局支持
 
+### 额外功能
+1.  从百度页面里面抠了一个获取名人名言的api出来,每次刷新页面会在标题栏下方显示不同的名人名言
+
 #### TODO
 *	评论邮件提醒、近期评论
 
@@ -47,6 +50,9 @@ a java blog
 ### 支持浏览器
 * 前台 ie6+
 * 后台 chrome/firefox/ie9+
-  
+
+### 当前开发者博客
+  (http://blog.blurrett.com)
+
 ### 原作者博客
   (http://www.zhouhaocheng.cn)
