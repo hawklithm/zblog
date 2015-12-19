@@ -53,7 +53,7 @@ zblog.post.insert=function(){
       result = $("#editor-txt-tt").val();
       break;
     case "mk":
-      result = zblog.post.epiceditor.getElement('editor').body.innerHTML;
+      result = zblog.post.epiceditor.getElement('previewer').body.innerHTML;
       break;
     default: result="";
     }
