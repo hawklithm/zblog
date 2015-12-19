@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -108,7 +109,7 @@ public class PerformanceInterceptor implements Interceptor{
       }
     }
 
-    return sql.replaceFirst("\\?", result);
+    return StringUtils.replaceOnce(sql,"\\?",result);
   }
 
 }
