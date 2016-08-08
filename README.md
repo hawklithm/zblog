@@ -51,6 +51,9 @@ a java blog
 * 前台 ie6+
 * 后台 chrome/firefox/ie9+
 
+### 最新工作
+* docker化！！！
+
 ### 当前开发者博客
   (http://blog.blurrett.com)
 
